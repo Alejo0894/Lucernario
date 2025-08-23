@@ -37,7 +37,7 @@ lucernario-cineclub/
 
 <b>Nota importante</b><br><br>
 Esta versión incluye solo un PDF de ejemplo para demostrar la funcionalidad.  
-El sitio completo contiene más números de revista y contenido adicional.
+El sitio completo contiene el contenido normal de la página web: https://contraespacios.org/lucernario/lucernario.html
 
 <br>
 
