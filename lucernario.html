@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucernario Cineclub</title>
+
+    <!-- SEO básico -->
+    <meta name="description" content="Lucernario Cineclub: Cine, cultura y comunidad. Publicación de revistas, muestras de cortometrajes y más.">
+    <meta name="keywords" content="cine, cineclub, cortometrajes, cultura, Lucernario, revista de cine, Dimekia">
+    <meta name="author" content="Dimekia Audiovisual">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, etc.) -->
+    <meta property="og:title" content="Lucernario Cineclub">
+    <meta property="og:description" content="Cine, cultura y comunidad. Publicación de revistas, muestras de cortometrajes y más.">
+    <meta property="og:image" content="https://contraespacios.org/lucernario/png/thumb.png?v=3">
+    <meta property="og:url" content="https://contraespacios.org/lucernario/lucernario.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lucernario Cineclub">
+    <meta name="twitter:description" content="Cine, cultura y comunidad. Publicación de revistas, muestras de cortometrajes y más.">
+    <meta name="twitter:image" content="https://contraespacios.org/lucernario/png/thumb.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://contraespacios.org/lucernario/png/01.png" />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/main.css?v=1.0" />
+    <link rel="stylesheet" href="css/autor.css?v=1.0" />
+    <link rel="stylesheet" href="css/revista.css?v=1.0" />
+    <link rel="stylesheet" href="css/muestra.css?v=1.0" />
+    <link rel="stylesheet" href="css/modal.css?v=1.0" />
+    <link rel="stylesheet" href="css/pdf.css?v=1.0" />
+
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <!-- Cabecera -->
+    <header>
+        <img src="png/banner.png" alt="Lucernario Cineclub" style="width: 100%; vertical-align: bottom;" />
+    </header>
+
+    <!-- Navegación principal -->
+    <nav>
+        <a data-target="inicio">Inicio</a>
+        <a data-target="revista">Revista</a>
+        <a data-target="muestras">Muestras</a>
+        <a data-target="contacto">Contacto</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="active fade-in">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h2 style="color: #ffcc00;">Lucernario Cineclub</h2>
+                    <p>
+                        <b style="color: #ffcc00;">Lucernario Cineclub</b> es una plataforma de exhibición, formación de públicos y encuentro comunitario en torno al cine colombiano y latinoamericano. Nacido del deseo de ver y hacer cine desde Medellín, este colectivo ha construido espacios donde las películas se comparten como ventanas a otras realidades, desde cortometrajes locales hasta obras de culto. Con proyecciones itinerantes, sesiones temáticas, conversatorios y una revista propia, <b style="color: #ffcc00;">Lucernario apuesta por una experiencia cinematográfica cercana, crítica y transformadora, donde el cine se vive como una herramienta de diálogo, memoria y creación colectiva</b>.
+                    </p>
+                </div>
+
+                <div style="flex: 0 0 auto; min-width: 200px; text-align: center;">
+                    <svg width="100%" viewBox="0 0 250 250" style="max-width: 250px; border-radius: 8px;">
+                        <defs>
+                            <linearGradient id="fadeGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="white" />
+                                <stop offset="80%" stop-color="white" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                            <mask id="fadeMask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradient)" />
+                            </mask>
+                        </defs>
+                        <image href="png/intro.png" x="0" y="0" width="100%" height="100%" mask="url(#fadeMask)" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Revista -->
+        <section id="revista">
+            <!-- Intro + imagen en flex -->
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                <!-- Texto introductorio -->
+                <div style="flex: 1; min-width: 250px;">
+                    <h2 style="color: #ffcc00;">Revista Lucernario</h2>
+                    <p>
+                        La revista del Cineclub publica dos números por año, cada uno recoge las muestras que se hicieron en el semestre y contará con artículos que hablen de los cortometrajes y sus realizadores, entrevistas a realizadores nacionales y temas de cultura general.
+                    </p>
+                    <p> 
+                        Para navegar la revista, selecciona el número que quieras leer. Tanto los números completos como los artículos pueden ser leídos en texto sencillo desde la página web, en un visualizador digital elaborado con la librería <a href="https://mozilla.github.io/pdf.js/" target="_blank" style="color: #ffcc00;">PDF.js</a>, o descargados en formato PDF de alta calidad.
+                    </p>
+                </div>
+
+                <!-- Imagen -->
+                <div style="flex: 0 0 auto; min-width: 200px; text-align: center; margin-bottom: 15px;">
+                    <svg width="100%" viewBox="0 0 250 250" style="max-width: 250px; border-radius: 8px;">
+                        <defs>
+                            <linearGradient id="fadeGradientRevista" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="white" />
+                                <stop offset="80%" stop-color="white" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                            <mask id="fadeMaskRevista">
+                                <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradientRevista)" />
+                            </mask>
+                        </defs>
+                        <image href="png/revista.png" x="0" y="0" width="100%" height="100%" mask="url(#fadeMaskRevista)" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Aquí ya empieza el contenido de la revista -->
+            <div class="numero">
+                <button class="toggle-numero">Número 1 - Mayo (2025)</button>
+                <div class="contenido-numero">
+                    <!-- Artículo 1 -->
+                    <button class="toggle-articulo">1. La Luz que Marca el Camino</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/1/editorial.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 2 -->
+                    <button class="toggle-articulo">2. Danta Cine y la Distribución independiente</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/2/danta_cine.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 3 -->
+                    <button class="toggle-articulo">3. ¿Hay una Nueva Cinefilia?</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/3/nueva_cinefilia.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 4 -->
+                    <button class="toggle-articulo">4. 12 Años de Intermediaciones</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/4/intermediaciones.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 5 -->
+                    <button class="toggle-articulo">5. Cine pa' Mirar pa' Dentro</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/5/mirarpadentro.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 6 -->
+                    <button class="toggle-articulo">6. La Virgen de los Sicarios</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/6/la_virgen.html"></div>
+                    </div>
+                    <br>
+                    <!-- Artículo 7 -->
+                    <button class="toggle-articulo">7. Lo que Vimos en la Segunda</button>
+                    <div class="contenido-articulo">
+                        <div class="scrollable" data-html="articulos/num_1/7/la_segunda.html"></div>
+                    </div>
+                    <br>
+                    <!-- Número completo -->
+                    <div class="pdf-actions">
+                        <a href="articulos/num_1/lucernario_001_ejemplo.pdf" class="pdf-link" download>
+                            Descargar número completo
+                        </a>
+                        <a href="#" class="pdf-link open-pdf-modal" data-pdf="articulos/num_1/lucernario_001_ejemplo.pdf">
+                            Ver número completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p style="color: #ffcc00;">
+                <strong>Equipo editorial:</strong> Juandi; Darva; Rebeca; Manuela; Pollo
+            </p>
+        </section>
+
+        <!-- Sección Muestras -->
+        <section id="muestras">
+            <!-- Intro con imagen -->
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+                <!-- Texto introductorio -->
+                <div style="flex: 1; min-width: 250px;">
+                    <h2 style="color: #ffcc00;">Muestras</h2>
+                    <p>
+                        Consisten en la apertura de convocatoria a nivel nacional para que los realizadores envíen sus cortometrajes dentro de las categorías de Ficción, No ficción, Experimental y Animación. El Cineclub hace la curaduría y selección de los cortos que serán exhibidos en un evento. Se realizan cuatro muestras al año.
+                    </p>
+                </div>
+
+                <!-- Imagen -->
+                <div style="flex: 0 0 auto; min-width: 200px; text-align: center; margin-bottom: 15px;">
+                    <svg width="100%" viewBox="0 0 250 250" style="max-width: 250px; border-radius: 8px;">
+                        <defs>
+                            <linearGradient id="fadeGradientMuestra" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="white" />
+                                <stop offset="80%" stop-color="white" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                            <mask id="fadeMaskMuestra">
+                                <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradientMuestra)" />
+                            </mask>
+                        </defs>
+                        <image href="png/muestra.png" x="0" y="0" width="100%" height="100%" mask="url(#fadeMaskMuestra)" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Navegación por pestañas -->
+            <div class="muestra-pestañas">
+                <button class="muestra-pestaña active" data-pestaña="2025">2025</button>
+            </div>
+
+            <!-- Contenidos -->
+            <div class="muestra-contenido active" id="pestaña-2025">
+                <div class="muestra">
+                    <button class="toggle-muestra">Inauguración - 1 de marzo</button>
+                    <div class="contenido-muestra" data-html="muestras/2025/1_marzo/1_marzo.html"></div>
+                </div>
+
+                <div class="muestra">
+                    <button class="toggle-muestra">La Segunda - 31 de mayo</button>
+                    <div class="contenido-muestra" data-html="muestras/2025/31_mayo/31_mayo.html"></div>
+                </div>
+
+                <div class="muestra">
+                    <button class="toggle-muestra">Lucernario Itinerante</button>
+                    <div class="contenido-muestra" data-html="muestras/2025/itinerante/itinerante.html"></div>
+                </div>
+
+                <p style="color: #ffcc00;">
+                    <strong>Organización y gestión:</strong> Darva, Juandi, Manuela y Rebeca.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+                <!-- Texto de contacto -->
+                <div style="flex: 1; min-width: 250px;">
+                    <h2 style="color: #ffcc00;">Contacto</h2>
+                    <p>
+                        Escríbenos a: 
+                        <a href="mailto:lucernariocineclub@gmail.com" style="color: #ffcc00;">
+                            lucernariocineclub@gmail.com
+                        </a>
+                    </p>
+
+                    <a href="https://www.instagram.com/lucernariocineclub/" 
+                       target="_blank" 
+                       style="display: inline-flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding: 10px 20px; background-color: #ffcc00; color: black; text-decoration: none; border-radius: 5px; font-weight: bold; width: 100px;">
+                        Instagram
+                        <img src="svg/insta.svg" alt="Instagram" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+
+                <!-- Imagen -->
+                <div style="flex: 0 0 auto; min-width: 200px; text-align: center; margin-top: 15px;">
+                    <svg width="100%" viewBox="0 0 250 250" style="max-width: 250px; border-radius: 8px;">
+                        <defs>
+                            <linearGradient id="fadeGradientContacto" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="white" />
+                                <stop offset="80%" stop-color="white" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                            <mask id="fadeMaskContacto">
+                                <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradientContacto)" />
+                            </mask>
+                        </defs>
+                        <image href="png/contacto.png" x="0" y="0" width="100%" height="100%" mask="url(#fadeMaskContacto)" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <img src="svg/copyleft.svg" alt="Copyleft" style="height: 1.2em;"> 
+            2025 Dimekia Audiovisual.
+        </p>
+        <p style="display: flex; align-items: center; justify-content: center;">
+            <a href="https://github.com" 
+               target="_blank" 
+               style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="svg/github.svg" alt="Github" style="width: 30px; height: 30px; margin-right: 8px;">
+                GitHub
+            </a>
+        </p>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="modal-muestra" class="modal-muestra">
+        <span class="cerrar-modal">&times;</span>
+        <img class="contenido-modal" id="imagen-modal" src="" alt="">
+    </div>
+    
+    <div id="pdf-modal" style="display: none;">
+        <div class="pdf-modal-content">
+            <button class="close-pdf-modal">&times;</button>
+            <div id="pdf-canvas-container"></div>
+            <div id="pdf-controls">
+                <button id="prev-page">Anterior</button>
+                <span id="page-num"></span>
+                <button id="next-page">Siguiente</button>
+            </div>
+            <!-- Contenedor para el botón "Cerrar" dentro de la estructura de contenido -->
+            <div id="close-btn-container">
+                <button id="close-pdf-btn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/nav.js"></script>
+    <script src="js/revista.js"></script>
+    <script src="js/muestra.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/carga.js"></script>
+</body>
+</html>

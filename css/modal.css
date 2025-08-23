@@ -1,0 +1,44 @@
+.modal-muestra {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-muestra .contenido-modal {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
+  }
+  
+  .cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffcc00;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cerrar-modal:hover {
+    color: white;
+  }
+
+
+
+
+
+
+

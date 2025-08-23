@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  background: #ffcc00; 
+  color: #000; 
+  padding: 1em 2em;
+  text-align: center;
+}
+
+nav {
+  background: #e6b800; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #000; 
+  text-decoration: none;
+  padding: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #ccaa00; 
+  color: #000;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+  background: #1a1a1a;
+  min-height: 300px;
+  position: relative;
+  color: #fff;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none; 
+}
+
+section.active {
+  display: block;
+}
+
+section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  header {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  header img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+footer {
+  background: #000;
+  color: #ffcc00;
+  text-align: center;
+  padding: 1em;
+}
+
+.muestra-pestañas {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 0 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  white-space: nowrap;           
+}
+
+.muestra-pestañas::-webkit-scrollbar {
+  display: none;
+}
+
+.muestra-pestaña {
+  background: #2a2a2a;
+  color: #ffcc00;
+  padding: 10px 18px;
+  border: 2px solid #ffcc00;
+  border-bottom: none;  
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;       
+  white-space: nowrap;
+}
+
+.muestra-pestaña:hover {
+  background: #444;
+  color: #ffd633;
+}
+
+.muestra-pestaña.active {
+  background: #ffcc00;
+  color: #222;
+  box-shadow: none;
+}
+
+.muestra-contenido {
+  display: none;
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 0 12px 12px 12px;
+  background: #111;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  margin-top: -2px;  
+}
+
+.muestra-contenido.active {
+  display: block;
+  opacity: 1;
+}
+

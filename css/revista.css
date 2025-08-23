@@ -1,0 +1,83 @@
+#revista .numero {
+    margin-bottom: 1em;
+    border: 1px solid #444;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(255,204,0,0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .toggle-numero,
+  .toggle-articulo {
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    font-weight: bold;
+    border: none;
+    background: #333;
+    color: #ffcc00;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-articulo {
+    background: #2a2a2a;
+    font-weight: normal;
+    padding-left: 2em;
+  }
+  
+  .toggle-numero:hover,
+  .toggle-articulo:hover {
+    background: #444;
+  }
+  
+  .toggle-numero::after,
+  .toggle-articulo::after {
+    content: "▸";
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-numero.active::after,
+  .toggle-articulo.active::after {
+    transform: rotate(90deg);
+  }
+  
+  .contenido-numero,
+  .contenido-articulo {
+    max-height: 0;
+    overflow: hidden;
+    background: #1f1f1f;
+    transition: max-height 0.5s ease;
+    padding: 0 1em;
+    color: #fff;
+  }
+  
+  .contenido-numero.open,
+  .contenido-articulo.open {
+    max-height: 1000px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  
+  .contenido-articulo .scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .contenido-articulo .scrollable::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .contenido-articulo .scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 204, 0, 0.6);
+    border-radius: 4px;
+  }
+  
+  .contenido-articulo .scrollable::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
