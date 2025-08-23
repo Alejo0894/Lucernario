@@ -1,5 +1,5 @@
 <b>Lucernario Cineclub - Sitio Web</b><br><br>
-Sitio web oficial de Lucernario Cineclub, una plataforma de exhibición, formación de públicos y encuentro comunitario en torno al cine colombiano y latinoamericano.
+Sitio web oficial de Lucernario Cineclub, una plataforma de exhibición, formación de públicos y encuentro comunitario en torno al cine, especialmente el cine colombiano.
 
 <br>
 
