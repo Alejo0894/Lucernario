@@ -1,14 +1,14 @@
 <b>Lucernario Cineclub - Sitio Web</b><br><br>
-Sitio web oficial de Lucernario Cineclub, una plataforma de exhibición, formación de públicos y encuentro comunitario en torno al cine, especialmente el cine colombiano.
+Sitio web de Lucernario Cineclub, una plataforma de exhibición, formación de públicos y encuentro comunitario en torno al cine, especialmente el cine colombiano.
 
 <br>
 
 <b>Acerca del proyecto</b><br><br>
-Lucernario Cineclub es un colectivo que organiza proyecciones itinerantes, sesiones temáticas, conversatorios y publica una revista propia.  
+Lucernario Cineclub es una iniciativa que organiza proyecciones itinerantes, sesiones temáticas, conversatorios y publica una revista propia.  
 El sitio web presenta información sobre:
 
 - La revista digital con artículos sobre cortometrajes  
-- Muestras de cortometrajes nacionales  
+- Muestras de cortometrajes nacionales e internacionales  
 - Información de contacto y redes sociales  
 
 <br>
@@ -20,10 +20,13 @@ lucernario-cineclub/
 ├── css/           # Hojas de estilo
 ├── js/            # Scripts JavaScript
 ├── articulos/     # Contenido de la revista
+├── muestras/      # Contenido de las muestras
 ├── png/           # Imágenes
 ├── svg/           # Iconos
 └── lucernario.html     # Archivo principal
 </pre>
+
+El sitio web funciona vinculando diferentes archivos HTML y PDF a una página principal de manera dinámica, haciendo que la implementación y uso sean ligeros y modulares.
 
 <br>
 
