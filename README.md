@@ -31,10 +31,10 @@ El sitio web funciona vinculando diferentes archivos HTML y PDF a una página pr
 <br>
 
 <b>Tecnologías utilizadas</b><br><br>
-- HTML5  
-- CSS3  
-- JavaScript  
-- PDF.js (para visualización de revistas)  
+- HTML5 (Estructura principal)
+- CSS3 (Diseño visual) 
+- JavaScript (Código de navegación) 
+- PDF.js (Visualización de la revista)  
 
 <br>
 
